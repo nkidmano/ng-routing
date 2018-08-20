@@ -11,6 +11,8 @@ import { UserComponent } from './users/user/user.component';
 import { EditServerComponent } from './servers/edit-server/edit-server.component';
 import { ServerComponent } from './servers/server/server.component';
 import { ServersService } from './servers/servers.service';
+import { AppRoutingModule } from './/app-routing.module';
+import { ToggleActiveDirective } from './shared/toggle-active.directive';
 
 @NgModule({
   declarations: [
@@ -20,12 +22,14 @@ import { ServersService } from './servers/servers.service';
     ServersComponent,
     UserComponent,
     EditServerComponent,
-    ServerComponent
+    ServerComponent,
+    ToggleActiveDirective
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [ServersService],
   bootstrap: [AppComponent]
