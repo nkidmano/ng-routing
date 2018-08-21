@@ -13,6 +13,7 @@ import { ServerComponent } from './servers/server/server.component';
 import { ServersService } from './servers/servers.service';
 import { AppRoutingModule } from './/app-routing.module';
 import { ToggleActiveDirective } from './shared/toggle-active.directive';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ToggleActiveDirective } from './shared/toggle-active.directive';
     UserComponent,
     EditServerComponent,
     ServerComponent,
-    ToggleActiveDirective
+    ToggleActiveDirective,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
