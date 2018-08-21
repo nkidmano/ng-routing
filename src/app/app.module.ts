@@ -11,7 +11,7 @@ import { UserComponent } from './users/user/user.component';
 import { EditServerComponent } from './servers/edit-server/edit-server.component';
 import { ServerComponent } from './servers/server/server.component';
 import { ServersService } from './servers/servers.service';
-import { AppRoutingModule } from './/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { ToggleActiveDirective } from './shared/toggle-active.directive';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
@@ -27,13 +27,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ToggleActiveDirective,
     PageNotFoundComponent
   ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, FormsModule, HttpModule, AppRoutingModule],
   providers: [ServersService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

@@ -6,13 +6,13 @@ import { Injectable } from '@angular/core';
 export class AuthService {
   loggedIn = false;
 
-  constructor() { }
+  constructor() {}
 
   isAuthenticated() {
     const promise = new Promise((res, rej) => {
       setTimeout(() => {
         res(this.loggedIn);
-      }, 1500);
+      }, 500);
     });
     return promise;
   }
